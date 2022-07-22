@@ -95,7 +95,7 @@ public class MySQL {
             String password = "29992278";
             Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("try login");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/inputdata?useSSL=false&allowPublicKeyRetrieval=true", "root", "29992278");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/inputdata", "root", "29992278");
             System.out.println("success");
             return conn;
         } catch (Exception e) {
